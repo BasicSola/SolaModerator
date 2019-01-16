@@ -105,5 +105,5 @@ bot.on("message", async message => {
   if(commandfile) commandfile.run(bot,message,args);
 
 });
-
-bot.login(tokenhere);
+const token = process.env.TOKEN;
+bot.login(process.env.TOKEN);
